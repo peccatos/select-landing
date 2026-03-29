@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Select Landing is a modern HTML and CSS landing page starter.">
+  <title>Select Landing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="bg-orb bg-orb--one" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--two" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="topbar container">
+    <a class="brand" href="#top" aria-label="Select Landing">
+      <span class="brand__mark">S</span>
+      <span class="brand__text">Select Landing</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#features">Features</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="pill" href="#contact">Start a build</a>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero__content">
+        <p class="eyebrow">HTML + CSS only</p>
+        <h1>Select the path that launches faster.</h1>
+        <p class="lead">
+          A sharp landing page template for products, studios, and personal brands.
+          Designed to feel premium without dragging in a framework.
+        </p>
+
+        <div class="hero__actions">
+          <a class="button button--primary" href="#contact">Launch now</a>
+          <a class="button button--ghost" href="#features">See sections</a>
+        </div>
+
+        <dl class="stats" aria-label="Project stats">
+          <div>
+            <dt>03</dt>
+            <dd>Core sections</dd>
+          </div>
+          <div>
+            <dt>100%</dt>
+            <dd>Static front end</dd>
+          </div>
+          <div>
+            <dt>24h</dt>
+            <dd>Fast to customize</dd>
+          </div>
+        </dl>
+      </div>
+
+      <aside class="hero__panel">
+        <p class="panel__eyebrow">Launch checklist</p>
+        <h2>Built to keep the page clear.</h2>
+
+        <ul class="checklist">
+          <li>Hero with a focused CTA</li>
+          <li>Feature cards with hierarchy</li>
+          <li>Contact block ready for links</li>
+        </ul>
+
+        <div class="panel__meter" aria-hidden="true">
+          <span class="panel__meter-fill"></span>
+        </div>
+
+        <p class="panel__caption">No JS. No build chain. Just HTML and CSS.</p>
+      </aside>
+    </section>
+
+    <section id="features" class="section container">
+      <div class="section__heading">
+        <p class="eyebrow">Features</p>
+        <h2>Three blocks that do the selling.</h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card feature-card--accent">
+          <p class="feature-card__index">01</p>
+          <h3>Clear hierarchy</h3>
+          <p>
+            The page opens with a strong headline, short proof, and one action that matters.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <p class="feature-card__index">02</p>
+          <h3>Responsive grid</h3>
+          <p>
+            The layout collapses cleanly on mobile without losing rhythm, spacing, or order.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <p class="feature-card__index">03</p>
+          <h3>Easy to edit</h3>
+          <p>
+            Copy, colors, and links live in plain HTML and CSS. No framework tax, no hidden logic.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="process" class="section container">
+      <div class="section__heading">
+        <p class="eyebrow">Process</p>
+        <h2>Drop in your copy, swap the CTA, publish.</h2>
+      </div>
+
+      <div class="process__grid">
+        <article class="step">
+          <span>01</span>
+          <h3>Position</h3>
+          <p>Replace the hero message with the value proposition your audience should remember.</p>
+        </article>
+
+        <article class="step">
+          <span>02</span>
+          <h3>Refine</h3>
+          <p>Adjust accents, cards, and spacing. The structure already carries the layout.</p>
+        </article>
+
+        <article class="step">
+          <span>03</span>
+          <h3>Launch</h3>
+          <p>Connect the buttons, upload the files, and ship a landing page that feels deliberate.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="cta container">
+      <div class="cta__copy">
+        <p class="eyebrow">Ready to ship</p>
+        <h2>Use this as the starting point or reshape it into your own landing page.</h2>
+      </div>
+
+      <a class="button button--primary" href="mailto:hello@select-landing.dev">Email the team</a>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>Select Landing.</p>
+    <p>Static HTML + CSS starter</p>
+  </footer>
+</body>
+</html>
