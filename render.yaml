@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: select-landing
+    runtime: static
+    plan: free
+    branch: codex/select-landing
+    autoDeploy: true
+    buildCommand: mkdir -p public && cp index.html styles.css public/
+    staticPublishPath: ./public
+    headers:
+      - path: /
+        name: Cache-Control
+        value: no-cache, no-store, must-revalidate
+      - path: /index.html
+        name: Cache-Control
+        value: no-cache, no-store, must-revalidate
+      - path: /styles.css
+        name: Cache-Control
+        value: public, max-age=3600
